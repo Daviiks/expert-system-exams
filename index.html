@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подготовка к экзамену по ИИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Вопросы к экзамену по Искусственному Интеллекту</h1>
+        
+        <div class="controls">
+            <button id="prevBtn">← Предыдущий</button>
+            <span id="counter">Вопрос 1 из 105</span>
+            <button id="nextBtn">Следующий →</button>
+            <button id="randomBtn">Случайный вопрос</button>
+        </div>
+
+        <div class="card">
+            <div class="question" id="question">
+                <!-- Вопрос будет здесь -->
+            </div>
+            <div class="answer" id="answer">
+                <!-- Ответ будет здесь -->
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <p>Изучено: <span id="studiedCount">0</span> из 105</p>
+            <button id="resetBtn">Сбросить прогресс</button>
+        </div>
+
+        <div class="filter">
+            <input type="text" id="search" placeholder="Поиск вопроса...">
+            <select id="topicFilter">
+                <option value="">Все темы</option>
+                <!-- Темы будут добавляться через JS -->
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
